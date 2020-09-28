@@ -1,16 +1,14 @@
-package com.tsd.basic.array;
+package com.tsd.basic.gm;
 
-public class ArrayTest01 {
+public class Palindrome {
     public static void main(String[] args) {
         for (int i = 0; i < 10000; i++) {
             if(isPalindrome(i)){
-
+                System.out.println(i);
             }
         }
     }
 
-    // 判断一个数字是不是回文数
-    // 题解链接 https://leetcode-cn.com/problems/palindrome-number/solution/hui-wen-shu-by-leetcode-solution/
     public static Boolean isPalindrome(int number) {
         // 负数不会是回文数
         if (number < 0) {
